@@ -1,54 +1,448 @@
 <!DOCTYPE html>
 <html lang="fr">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="stylesheet" href="main.css">
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link
+         href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Source+Serif+4:ital,opsz,wght@0,8..60,200..900;1,8..60,200..900&display=swap"
+         rel="stylesheet">
+      <title>Arolo - network automation software and expertise</title>
+      <link rel="icon" type="image/x-icon" href="img/favicon.ico">
+   </head>
+   <body>
+      <!-- header -->
+      <header class="site-header sticky-top p-0">
 
-    <link rel="stylesheet" href="main.css">
+            <!-- 
 
-    <script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
-    <title>Bootstrap Test</title>
-</head>
-<body>
-    <section class="container">
-        <div class="accordion" id="accordionExample">
-            <div class="accordion-item">
-              <h2 class="accordion-header">
-                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                  Accordion Item #1
-                </button>
-              </h2>
-              <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
-                <div class="accordion-body">
-                  <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
-                </div>
-              </div>
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#mainNavBar">menu</button>
+            <div class="d-flex align-items-center collapse navbar-collapse" id="mainNavBar">
+
+
+               <ul class="nav mb-md-0 me-5">
+
+               </ul>
+
+            </div> -->
+
+            <nav class="navbar navbar-expand-sm " aria-label="Third navbar example">
+               <div class="container-xxl p-0">
+                  <a href="/" class=" m-2 d-flex align-items-center mb-3 mb-md-0 me-md-5 text-dark text-decoration-none">
+                     <img src="img/arolobrand_full_horizontal_rgb.svg" alt="logo-Arolo" class="head-brand">
+                     </a>
+                 <button class="navbar-toggler m-2" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample03" aria-controls="navbarsExample03" aria-expanded="false" aria-label="Toggle navigation">
+                   <span class="navbar-toggler-icon"></span>
+                 </button>
+           
+                 <div class="collapse navbar-collapse justify-content-end bg-white p-3" id="navbarsExample03">
+                   <ul class="navbar-nav me-5 mb-2 mb-sm-0">
+                     <li><a href="#services" class="nav-link px-3 link-dark">Services</a></li>
+
+                     <li><a href="#testimony" class="nav-link px-3 link-dark">Testimony</a></li>   
+                     <li><a href="#keyFeatures" class="nav-link px-3 link-dark">Features</a></li>
+                     <li><a href="#team" class="nav-link px-3 link-dark">Team</a></li>
+                   </ul>
+
+                   <a href="#contact" class="btn btn-primary fw-light rounded-4 py-2 px-5" role="button" aria-pressed="true"><span class=" d-block py-1">contact</span></a>
+                 </div>
+               </div>
+             </nav>
+
+
+      </header>
+      <!-- header end -->
+<!-- banner -->
+<section id="banner" class="py-5  px-2 px-md-5">
+   <div class="container-xxl mt-5 pt-5">
+
+
+   <div class="row">
+      <div class="col-12 col-md-5">
+         <h1 class="main-heading">
+            <span class="fw-lighter">Empowering businesses with</span><span class="fw-normal"> cutting-edge network automation software </span> <span class="fw-medium">and expertise.</span> 
+         </h1>
+         <a href="#contact" class="btn btn-primary fw-light rounded-4 py-2 px-5" role="button" aria-pressed="true"><span class=" d-block py-1">contact</span></a>
+
+      </div>
+      <div class="col-12 col-md-7">
+         <img class="interface" src="img/interface.webp" alt="">
+      </div>
+   </div>
+
+</div>
+</section>
+
+<!-- banner end -->
+
+
+
+
+      <!-- 
+         key services -->
+      <section class="px-2 px-md-5">
+         <div class="container-xxl bg-overlay position-relative p-5 my-5 rounded-4 overflow-hidden"
+            style="background-image: url(img/blue-fiber.webp); background-size: cover;">
+            <div class="row z-1 position-relative">
+               <div class="col-12 col-lg-4 text-white p-3">
+                  <div class="d-flex align-items-center mb-4">
+                     <img src="img/expert.svg" alt="expert" class="me-3">
+                     <h3 class="fs-4">Our expertise</h3>
+                  </div>
+                  <p>With our deep industry experience, we've guided numerous renowned companies in engineering and automating
+                     their networks.
+                  </p>
+               </div>
+               <div class="col-12 col-lg-4 text-white p-3">
+                  <div class="d-flex align-items-center mb-4">
+                     <img src="img/automate.svg" alt="expert" class="me-3">
+                     <h3 class="fs-4">Prelude Network Automation</h3>
+                  </div>
+                  <p>Our flagship product is the epitome of our expertise, addressing all your needs in L2VPN, L3VPN deployment,
+                     ZTP, Software Upgrade, and much more.
+                  </p>
+               </div>
+               <div class="col-12 col-lg-4 text-white p-3">
+                  <div class="d-flex align-items-center mb-4">
+                     <img src="img/accelerate.svg" alt="expert" class="me-3">
+                     <h3 class="fs-4">Accelerate your transformation</h3>
+                  </div>
+                  <p>While traditional projects can span years, Prelude enables you to start producing automated, large-scale
+                     results in just a few days.
+                  </p>
+               </div>
             </div>
-            <div class="accordion-item">
-              <h2 class="accordion-header">
-                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                  Accordion Item #2
-                </button>
-              </h2>
-              <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-                <div class="accordion-body">
-                  <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
-                </div>
-              </div>
+         </div>
+      </section>
+      <!-- key services -->
+      <!-- service list -->
+      <section id="services" class="px-2 px-md-5">
+         <div class="container-xxl">
+            <h2 class="display-4 fw-medium">Services</h2>
+            <div class="row d-flex align-items-start align-items-md-center">
+               <div class="col-12 col-md-7 col-lg-6 p-3 p-lg-5">
+                  <h2 class="fs-4 mb-4">Prelude Network Automation Software</h2>
+                  <p class="fs-6">Our flagship product offers comprehensive network automation capabilities, including:</p>
+                  <ul class="services-list">
+                     <li>L2VPN and L3VPN deployment</li>
+                     <li>Configuration lifecycle management</li>
+                     <li>Real-time service monitoring & assurance</li>
+                     <li>ZTP & Software Upgrade</li>
+                  </ul>
+               </div>
+               <div class="col-12 col-md-5 col-lg-6 p-3 p-lg-5">
+                  <img class="img-fluid" src="img/prelude_network_automation_software.webp" alt="prelude automation software">
+               </div>
             </div>
-            <div class="accordion-item">
-              <h2 class="accordion-header">
-                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                  Accordion Item #3
-                </button>
-              </h2>
-              <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-                <div class="accordion-body">
-                  <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
-                </div>
-              </div>
+            <div class="row d-flex align-items-start align-items-md-center flex-column-reverse flex-md-row mt-5">
+               <div class="col-12 col-md-5 col-lg-6 p-3 p-lg-5">
+                  <img class="img-fluid" src="img/tailored_prelude_solutions.webp" alt="prelude automation software">
+               </div>
+               <div class="col-12 col-md-7 col-lg-6 p-3 p-lg-5">
+                  <h2 class="fs-4 mb-4">Tailored Prelude Solutions</h2>
+                  <p class="fs-6">Prelude Network Automation have been design to build easy customization to meet your specific needs:</p>
+                  <ul class="services-list">
+                     <li>Integration with existing systems & Source of Truth</li>
+                     <li>Custom plugins development for unique use cases</li>
+                     <li>API development for third-party integrations</li>
+                     <li>ZTP & Software Upgrade</li>
+                  </ul>
+               </div>
             </div>
-          </div>
-    </section>
-</body>
+            <div class="row d-flex align-items-start align-items-md-center my-5">
+               <div class="col-12 col-md-7 col-lg-6 p-3 p-lg-5">
+                  <h2 class="fs-4 mb-4">MINT: Network Testing & Validation</h2>
+                  <p class="fs-6">Empower your network infrastructure with MINT’s advanced Testing & Validation capabilities, designed to elevate operational reliability and ensure optimal performance.</p>
+                  <ul class="services-list">
+                     <li>Traffic Generation enables simulation of complex scenarios</li>
+                     <li>BGP Speaker helps validate routers scaling</li>
+                     <li>Distributed probing provides deeper insights</li>
+                     <li>Pre-built Tests & Detailed Reports</li>
+                  </ul>
+               </div>
+               <div class="col-12 col-md-5 col-lg-6 p-3 p-lg-5">
+                  <img class="img-fluid" src="img/mint_network_testing_&_validation.webp" alt="prelude automation software">
+               </div>
+            </div>
+         </div>
+      </section>
+      <!-- service list end -->
+      <!-- Testimony & key feature -->
+      <section id="testimony" class="px-3 px-md-5 testenKey">
+         <div class="container-xxl">
+            <div class="row d-flex align-items-start  justify-content-between pt-5 my-5">
+            
+               <div class="col-12 col-md-4 p-3 p-md-5">
+                  <h2 class="display-4 mb-4 fw-medium">What our clients say about us</h2>
+               </div>
+               
+               <div class="col-12 col-md-8 py-0 px-3 p-md-5">
+                  <div id="carouselExampleDark" class="carousel carousel-dark slide">
+                     <div class="carousel-inner">
+                        <div class="carousel-item active" data-bs-interval="2000">
+                           <div class="content-carousel">
+                              <p class="fw-semibold fs-5">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+                              <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                           </div>
+                           <div class="signature-carousel mt-5">
+                              <p class="fw-semibold fs-5">Charle Ingals</p>
+                              <img src="img/nouvelle-aquitaine.svg" alt="">
+                           </div>
+                        </div>
+                        <div class="carousel-item" data-bs-interval="2000">
+                           <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                        </div>
+                        <div class="carousel-item" data-bs-interval="2000">
+                           <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                        </div>
+                     </div>
+                     <div class="carousel-indicators position-relative mx-0 mt-5 d-flex justify-content-start">
+                        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+
+         <div id="keyFeatures" class="container-xxl bg-overlay position-relative p-5 my-5 rounded-4 overflow-hidden"
+            style="background-image: url(img/blue-fiber.webp); background-size: cover;">
+            <div class="row">
+               <h2 class="fs-1 text-white fw-medium z-1">Key features of Prelude Network Automation</h2>
+            </div>
+            <div class="row z-1 position-relative">
+               <div class="col-12 col-lg-4 text-white p-3">
+                  <div class="key-feature-image-holder p-3 bg-white-transparent-50  rounded-3 mb-4">
+                     <img src="img/rectange.webp" class="img-fluid" alt="">
+                  </div>
+                  <div class="d-flex align-items-center mb-4">
+                     <img src="img/ic-light-bulb-white.svg" alt="expert" class="me-3">
+                     <h3 class="fs-5">Comprehensive Configuration Management</h3>
+                  </div>
+                  <p>Create, inventory, modify, and delete network services with ease. Say goodbye to configuration drift and hello to consistent, error-free network management.</p>
+               </div>
+               <div class="col-12 col-lg-4 text-white p-3">
+                  <div class="key-feature-image-holder p-3 bg-white-transparent-50  rounded-3 mb-4">
+                     <img src="img/rectange.webp" class="img-fluid" alt="">
+                  </div>
+                  <div class="d-flex align-items-center mb-4">
+                     <img src="img/ic-clock-white.svg" alt="expert" class="me-3">
+                     <h3 class="fs-5">Real-time Monitoring</h3>
+                  </div>
+                  <p>Our integrated telemetry module provides instant insights into your network's performance. Detect and resolve issues proactively, minimizing downtime.
+                  </p>
+               </div>
+               <div class="col-12 col-lg-4 text-white p-3">
+                  <div class="key-feature-image-holder p-3 bg-white-transparent-50  rounded-3 mb-4">
+                     <img src="img/rectange.webp" class="img-fluid" alt="">
+                  </div>
+                  <div class="d-flex align-items-center mb-4">
+                     <img src="img/ic-view-grid-add-white.svg" alt="expert" class="me-3">
+                     <h3 class="fs-5">Multi-vendor Support</h3>
+                  </div>
+                  <p>Prelude works seamlessly across various network equipment vendors, providing a unified automation solution for heterogeneous environments.
+                  </p>
+               </div>
+            </div>
+            <div class="row z-1 position-relative">
+               <div class="col-12 col-lg-4 text-white p-3">
+                  <div class="d-flex align-items-center mb-4">
+                     <img src="img/ic-hourglass-white.svg" alt="expert" class="me-3">
+                     <h3 class="fs-5">Rapid Deployment</h3>
+                  </div>
+                  <p>Start automating your network operations within days, not years. Our intuitive interface and pre-built templates accelerate your digital transformation journey.
+                  </p>
+               </div>
+               <div class="col-12 col-lg-4 text-white p-3">
+                  <div class="d-flex align-items-center mb-4">
+                     <img src="img/ic-arrows-expand-white.svg" alt="expert" class="me-3">
+                     <h3 class="fs-5">Scalability</h3>
+                  </div>
+                  <p>Whether you're managing a small network or a large enterprise infrastructure, Prelude grows with your needs, maintaining performance and efficiency at scale.
+                  </p>
+               </div>
+               <div class="col-12 col-lg-4 text-white p-3">
+                  <div class="d-flex align-items-center mb-4">
+                     <img src="img/ic-view-grid-add-white.svg" alt="expert" class="me-3">
+                     <h3 class="fs-5">Multi-vendor Support</h3>
+                  </div>
+                  <p>Prelude works seamlessly across various network equipment vendors, providing a unified automation solution for heterogeneous environments.
+                  </p>
+               </div>
+            </div>
+         </div>
+      </section>
+      <!-- Testimony & key feature end -->
+      <!-- Team -->
+      <section id="team" class="px-2 px-md-5">
+         <div class="container-xxl">
+            <div class="row pt-5 my-5">
+               <h2 class="fs-1 fw-medium z-1">Our team</h2>
+            </div>
+            <div class="row">
+               <div class=" d-flex
+                  col-12 col-lg-4 
+                  flex-column 
+                  justify-content-center align-items-center 
+                  flex-sm-row
+                  align-items-sm-start
+                  flex-lg-column
+                  justify-content-lg-center align-items-lg-center
+                  ">
+                  <div class="team-img-holder d-flex justify-content-center align-items-center flex-column mb-n5">
+                     <img src="img/Joss_1x.webp" class="team-menber-item-picture" alt="joss">
+                  </div>
+                  <div class="team-content 
+                     d-flex rounded-4 bg-teal-gradien-light
+                     flex-column justify-content-center
+                     px-4 p-5 pb-4
+                     p-sm-3 text-sm-start   
+                     px-lg-4 pt-lg-5 pb-lg-4   text-lg-center">
+                     <h3 class="mt-4">Joss Andersson</h3>
+                     <p>CTO</p>
+                     <p>Accedebant enim eius asperitati, ubi inminuta vel laesa amplitudo imperii dicebatur, et iracundae suspicionum quantitati proximorum cruentae blanditiae exaggerantium incidentia et dolere inpendio simulantium, si principis periclitetur vita, a cuius salute velut filo pendere statum orbis terrarum fictis vocibus exclamabant.
+                     </p>
+                  </div>
+               </div>
+               <div class=" d-flex
+                  col-12 col-lg-4 
+                  flex-column 
+                  justify-content-center align-items-center 
+                  flex-sm-row
+                  align-items-sm-start
+                  flex-lg-column
+                  justify-content-lg-center align-items-lg-center
+                  ">
+                  <div class="team-img-holder d-flex justify-content-center align-items-center flex-column mb-n5">
+                     <img src="img/Joss_1x.webp" class="team-menber-item-picture" alt="joss">
+                  </div>
+                  <div class="team-content 
+                     d-flex rounded-4 bg-teal-gradien-light
+                     flex-column justify-content-center
+                     px-4 p-5 pb-4
+                     p-sm-3 text-sm-start   
+                     px-lg-4 pt-lg-5 pb-lg-4   text-lg-center">
+                     <h3 class="mt-4">Joss Andersson</h3>
+                     <p>CTO</p>
+                     <p>Accedebant enim eius asperitati, ubi inminuta vel laesa amplitudo imperii dicebatur, et iracundae suspicionum quantitati proximorum cruentae blanditiae exaggerantium incidentia et dolere inpendio simulantium, si principis periclitetur vita, a cuius salute velut filo pendere statum orbis terrarum fictis vocibus exclamabant.
+                     </p>
+                  </div>
+               </div>
+               <div class=" d-flex
+                  col-12 col-lg-4 
+                  flex-column 
+                  justify-content-center align-items-center 
+                  flex-sm-row
+                  align-items-sm-start
+                  flex-lg-column
+                  justify-content-lg-center align-items-lg-center
+                  ">
+                  <div class="team-img-holder d-flex justify-content-center align-items-center flex-column mb-n5">
+                     <img src="img/Joss_1x.webp" class="team-menber-item-picture" alt="joss">
+                  </div>
+                  <div class="team-content 
+                     d-flex rounded-4 bg-teal-gradien-light
+                     flex-column justify-content-center
+                     px-4 p-5 pb-4
+                     p-sm-3 text-sm-start   
+                     px-lg-4 pt-lg-5 pb-lg-4   text-lg-center">
+                     <h3 class="mt-4">Joss Andersson</h3>
+                     <p>CTO</p>
+                     <p>Accedebant enim eius asperitati, ubi inminuta vel laesa amplitudo imperii dicebatur, et iracundae suspicionum quantitati proximorum cruentae blanditiae exaggerantium incidentia et dolere inpendio simulantium, si principis periclitetur vita, a cuius salute velut filo pendere statum orbis terrarum fictis vocibus exclamabant.
+                     </p>
+                  </div>
+               </div>
+
+
+            </div>
+         </div>
+      </section>
+      <!-- Team end -->
+
+<!-- contact -->
+<section id="contact" class="px-2 px-md-5 mt-5">
+   <div class="container-xxl bg-overlay position-relative p-3 p-md-5 my-5 rounded-4 overflow-hidden" style="background-image: url(img/blue-fiber.webp); background-size: cover;">
+      <div class="row z-1 position-relative d-flex align-items-center justify-content-center">
+         <div class="col-12 col-lg-6 text-white p-3">
+            <p class="display-5 fw-medium">Get in touch with our team to learn more about how we can help your business.
+            </p>
+
+            <a class="text-white text-decoration-none contact-link" href="mailto:contact@arolo-solutions.com"> <img src="img/arrow-right-white.svg" class="me-2 me-md-5" alt="">contact@arolo-solutions.com</a>
+         </div>
+
+         <div class="col-12 col-lg-6 p-3">
+            <img src="img/contact_image.webp" class="img-fluid" alt="">
+         </div>
+
+      </div>
+
+   </div>
+</section>
+
+<!-- contact end -->
+
+
+
+
+      <!-- footer  -->
+      <footer class="border-top border-black mt-5">
+         <div class="container-xxl py-5 px-2 d-flex justify-content-between">
+            Arolo ©2024 | All rights reserved
+            <a class="text-dark text-decoration-none" href="#">legal notice</a>
+         </div>
+      </footer>
+      <!-- footer end  -->
+      <script>
+         document.addEventListener("scroll", function () {
+         const header = document.querySelector(".site-header");
+         if (window.scrollY > 50) {
+           header.classList.add("scrolled");
+         } else {
+           header.classList.remove("scrolled");
+         }
+         });
+         
+      </script>
+      <script>
+         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+           anchor.addEventListener('click', function (e) {
+             e.preventDefault();
+             const target = document.querySelector(this.getAttribute('href'));
+             const offset = 100; // Set your offset value
+             const targetPosition = target.offsetTop - offset;
+       
+             window.scrollTo({
+               top: targetPosition,
+               behavior: 'smooth'
+             });
+           });
+         });
+       </script>
+       
+       <script>
+         function adjustCarouselHeights() {
+  const items = document.querySelectorAll('.carousel-item');
+  let maxHeight = 0;
+
+  items.forEach(item => {
+    item.style.height = ''; // Reset height to auto for recalculation
+    maxHeight = Math.max(maxHeight, item.offsetHeight);
+  });
+
+  items.forEach(item => {
+    item.style.height = maxHeight + 'px';
+  });
+}
+
+// Run on load and resize
+window.addEventListener('load', adjustCarouselHeights);
+window.addEventListener('resize', adjustCarouselHeights);
+       </script>
+
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+   </body>
 </html>

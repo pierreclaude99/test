@@ -1,9 +1,208 @@
 // Custom.scss
 // Option A: Include all of Bootstrap
 
-// Include any default variable overrides here (though functions won't be available)
-$primary: lime;
+
+// Typography
+$font-family-sans-serif:       "Poppins", sans-serif;
+$font-family-monospace:    "Poppins", sans-serif;
+
+$font-weight-lighter:         lighter !default;
+$font-weight-light:           300 !default;
+$font-weight-normal:          400 !default;
+$font-weight-medium:          500 !default;
+$font-weight-semibold:        600 !default;
+$font-weight-bold:            700 !default;
+$font-weight-bolder:          bolder !default;
+
+$font-weight-base:            $font-weight-light !default;
+
+
+
+// margin
+$enable-negative-margins:     true !default;
 
 @import "../node_modules/bootstrap/scss/bootstrap";
 
-// Then add additional custom code here
+
+// Header
+img.head-brand {
+  height: 48px;
+}
+
+.site-header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: transparent;
+
+}
+
+header.site-header {
+  background: rgba(255,255,255,0);
+  background: linear-gradient(180deg, rgba(255,255,255,0) 5%, rgba(255,255,255,0) 100%);
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+  padding-left:0.5rem;
+  padding-left:0.5rem;
+  border-bottom:1px solid black;
+  z-index: 1000;
+  transition: all 0.3s ease;
+
+}
+
+header.site-header.scrolled {
+  background: rgba(255,255,255,0);
+background: linear-gradient(180deg, rgba(255,255,255,1) 5%, rgba(255,255,255,0.8) 100%);
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+  padding-left:0.5rem;
+  padding-left:0.5rem;
+  border-bottom:1px solid white;
+  transition: all 0.3s ease;
+
+}
+
+
+// banner
+h1.main-heading {
+  font-size: 2.9rem !important;
+  line-height: 1.5em;
+}
+
+#banner{
+  background: url(img/prelude_circle_transparent.webp) transparent;
+  background-repeat: no-repeat;
+  background-position: calc(50% - 500px) calc(50% - 300px);
+
+  
+  
+}
+
+
+
+
+
+// Services
+#services{
+  background: url(img/prelude_circle_transparent.webp) transparent;
+  background-repeat: no-repeat;
+  background-position: calc(50% + 700px) center;
+}
+
+
+.service-img{
+  max-width: 575px;
+}
+
+
+ul.services-list{
+  list-style-type:none;
+}
+
+ul.services-list li{
+position:relative;
+  margin-bottom:16px
+}
+
+
+
+
+
+ul.services-list li:before {
+content: '';
+position: absolute;
+width: 24px;
+height: 24px;
+background: url(img/chevron_right_black.svg) transparent no-repeat center center  / cover;
+left: -32px;
+
+}
+
+
+
+
+
+
+
+.bg-overlay::after {
+  content: ""; // ::before and ::after both require content
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #182E6E;
+  opacity: .8;
+  z-index: 0;
+}
+
+
+
+.border-4{
+  border-radius: 0.75rem;
+}
+
+
+
+
+
+// Testimony & key feature 
+
+.testenKey{
+  background: 
+  linear-gradient(0deg, rgba(255, 255, 255, 1) 40%, rgba(255, 255, 255, 0.94) 40%), 
+  url(img/gray_town.webp) no-repeat top center;
+  background-size: cover;
+} 
+
+//  Team
+.team-menber-item-picture{
+  height: 212px;
+  width: 212px;
+  object-fit: cover;
+  z-index: 10;
+}
+
+
+// Contact
+.contact-link{
+  opacity:0.8;
+  transition: all 0.5s ease;;
+
+}
+
+.contact-link:hover{
+  opacity:1;
+  transition: all 1s ease;;
+
+}
+
+.contact-link img {
+  transition: all 1s ease;;
+  
+  }
+
+.contact-link:hover img {
+  transform: translateX(24px);
+transition: all 0.5s ease;;
+
+}
+
+
+
+
+
+
+// utilities
+.bg-white-transparent-50 {
+  background-color: rgba(255, 255, 255, 0.5) !important;
+}
+
+.bg-teal-gradien-light{
+  background: var(--tealgrad, linear-gradient(211deg, #F0FDFA 14.57%, #FFF 93.48%));
+}
+
+.center-section {
+  max-width: 1920px;
+  margin: 0 auto;
+}
